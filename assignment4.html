@@ -1,0 +1,62 @@
+<!-- https://replit.com/@ChangWonjoo/wjjang21#index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>challange assignment4</title>
+</head>
+<body>
+    <h1>Create An Account</h1>
+    <form action="#">
+        <label for="firstName">First name</label>
+        <input required id="firstName" type="text" />
+        <br/>
+        <label>
+            Last name
+            <input required type="text" />
+        </label>
+        <br/>
+        <label>
+            Email
+            <input required type="email" />
+        </label>
+        <br/>
+        <label>
+            Username
+            <input required type="text" />
+        </label>
+        <br/>
+        <label>
+            Password
+            <input required type="password" minlength="10" />
+        </label>
+        <br/>
+        <label>
+            Birth date
+            <input required type="date" />
+        </label>
+        <br/>
+        <label>
+            How happy are you?
+            <input required type="range" list="markers" min="0" max="50" step="10" />
+            <datalist id="markers">
+                <option value="0"></option>
+                <option value="10"></option>
+                <option value="20"></option>
+                <option value="30"></option>
+                <option value="40"></option>
+                <option value="50"></option>
+            </datalist>
+        </label>
+        <br/>
+        <label>
+            what is your fav.color?
+            <input required type="color" />
+        </label>
+        <input type="submit" value="Creaet Account" />
+    </form>
+</body>
+</html>
