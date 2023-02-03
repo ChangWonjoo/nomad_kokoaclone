@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 1000vh;
+            margin: 50px;
+        }
+        div {
+            /* position:fixed; */
+            width: 300px;
+            height: 100px;
+            background-color: wheat;
+            position: relative;
+        }
+        span{
+            background-color: tomato;
+            padding: 5px;
+            border-radius: 5px;
+            /* text-decoration:underline; */
+        }
+        p span{
+            background-color: yellowgreen;
+        }
+        div > span{
+            text-decoration:underline;
+        }
+        p + span{
+            text-decoration:none;
+            background-color: beige;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <span>hello</span>
+        <p>가나다라마바사아자차카타파하아야오요우유으이의<span>inside</span></p>
+        <span>spanTag next pTag</span>
+    </div>
+</body>
+</html>
+<!-- 
+    psuedoSelector >> 조건을 달아놓은 선택자로 활용을 잘하면 
+    id/class를 과도하게 사용하지 않고 html을 효율적으로 짤 수 있다.
+    
+    *div:nth-child(#) >> #에는 수식을 넣어서 지정할 수 있다
+    
+    *childrenSelector >> 특정 태그 안에 있는 태그를 추출할 수 있다. 
+    p span >> <p>안에 있는 <span>을 추출할 수 있다.
+
+    *div > span >> 자식 태그(직속관계에만)에 영향을 주고 싶은 경우에 사용한다.
+-->

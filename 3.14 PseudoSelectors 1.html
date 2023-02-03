@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 1000vh;
+            margin: 50px;
+        }
+        div {
+            /* position:fixed; */
+            width: 300px;
+            height: 100px;
+            background-color: wheat;
+            position: relative;
+        }
+        span{
+            background-color: tomato;
+        }
+        span:nth-child(2n+3){
+            background-color: teal;
+        }
+    </style>
+</head>
+<body>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+</body>
+</html>
+<!-- 
+    psuedoSelector >> 조건을 달아놓은 선택자로 활용을 잘하면 
+    id/class를 과도하게 사용하지 않고 html을 효율적으로 짤 수 있다.
+    nth-child(#) >> #에는 수식을 넣어서 지정할 수 있다
+-->
