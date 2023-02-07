@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The wonjoo times</title>
+        <style>
+            a{
+                color: white;
+                background-color: tomato;
+                text-decoration: none;
+                padding: 5px;
+                border-radius: 5px;
+                font-size: 55px;
+                transition: background-color 0.9s ease-in-out, color 0.9s ease-in-out, font-size 0.9s ease-in-out;
+            }
+            a:hover{
+                color: tomato;
+                background-color: wheat;
+                font-size: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="#">go home</a>
+    </body>
+</html>
+<!-- 
+    * text-decoration: none; >> 링크 밑줄 없앨 때 쓸 수 있다.
+    
+    1. Transition 을 사용하려면 state(ex.a:hover{})를 먼저 만들어줘야 한다.
+    2. transision은 state가 없는 mainCSS에 적용시켜줘야 하며, 
+        state에 지정되지 않은 속성을 적용할 수는 없다.
+
+ -->

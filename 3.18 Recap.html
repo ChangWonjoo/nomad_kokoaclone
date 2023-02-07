@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 1000vh;
+            margin: 50px;
+        }
+        span{
+            background-color: yellowgreen;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        input::placeholder{
+            color:aqua;
+        }
+        p::selection{
+            background-color: yellowgreen;
+            /* color: white; */
+        }
+        p::first-letter{
+            color: antiquewhite;
+            background-color: yellowgreen;
+            font-size: 50px;
+        }
+        input[type^="password"]{
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        aaaaaaaaaaaaaaaaaaaaa
+    </p>
+    <form action="#">
+        <input type="text" placeholder="palceholder" />
+    </form>
+</body>
+</html>
+<!-- 
+    ::placeholder >> placeholder 스타일링
+    ::selection >> 드래그 선택시 스타일링
+    span ~ input >> 복합 조건 선택 : ~ 동일 계층 태그, > 직속 자녀 태그, > + 동일 계층(바로 다음) 선택 
+    [attribute="attributeValue"] >> 태그 속성 값을 활용한 선택 : ~="" 포함, ^=""시작글자, $=""마지막글자
+    focus / focus-within / active / hover ...
+
+ -->
