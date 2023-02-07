@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            background-color: teal;
+            width: 200px;
+            height: 200px;
+        }
+        span{
+            font-size: 36px;
+        }
+        @media screen and (orientation:landscape) {
+            span{
+                display: none;
+            }
+        }
+        @media screen and (min-width: 300px) and (max-width: 1200px) and (orientation: portrait) {
+            div {
+                background-color: tomato;
+            }
+        }
+        @media print {
+            body{
+                background-color: blue;
+            } 
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <span>please flip your phone</span>
+</body>
+</html>
+<!-- 
+    media query >> 오직 css만을 이용해서 웹 사이트를 보는 사용자의 스크린의 사이즈를 알 수 있는 방법
+    *chrome 인스펙터를 통해 핸드폰 환경도 테스트할 수 있다.
+    media qeury를 통해 여러 조건들을 결합하여 CSS를 변경할 수 있고, 가로/세로 여부에도 반응시킬 수 있다.
+ -->
