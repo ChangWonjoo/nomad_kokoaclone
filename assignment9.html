@@ -6,86 +6,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment9</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
         :root{
             --backgroundColor: whitesmoke;
+            --defaultboderLine: 3px solid black;
+            --defaultfontFamily: 'Open Sans', sans-serif;
         }
-        html{
-            background-color: #00C6AD;
-        }
+
         body{
+            font-family: var(--defaultfontFamily);
+            padding: 20px;
+            border:5px solid #00C6AD;
             background-color: var(--backgroundColor);
-            height: 100vh;
+            width: 240px;
+            height: 550px;
             display:flex;
             flex-direction: column;
-            justify-content: space-around;
+            /* justify-content: space-around; */
             align-items: center;
         }
 
-        .playList{
+        header{
+            padding:10px 0px;
+            width:100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 700;
+        }
+        div[class^="header"]{
+            width:33%;
+        }
+        div[class^="header"]:nth-child(2){
             display:flex;
-            flex-direction: column;
+            justify-content: center;
         }
-        .playList--element{
-            display:flex;
-        }
-        .playList--photo{
-            margin:5px;
-            width:30px;
-            height:30px;
-            border: 2px solid black;
-            border-radius: 3px;
-        }
-        .playList--content{
-            margin:0px 5px;
-        }
+
+
         main{
+            width:100%;
             display: flex;
             flex-direction: column;
         }
         .main__content{
+            padding:20px 0px 15px 0px;
             display:flex;
             align-items: center;
+            font-size: 30px;
+            font-weight: 700;
         }
         .main__content--photo{
-            width: 100px;
-            height: 100px;
-            border: 2px solid black;
+            width: 95px;
+            height: 95px;
+            border: var(--defaultboderLine);
             border-radius: 15px;
             display:flex;
             justify-content: center;
             align-items: center;
             background-color: #FFBD11;
+            color:whitesmoke;
         }
+        .main__content--musicInfo{
+            padding-left: 10px;
+            width: 60%;
+            height: 100px;
+        }
+        .main__content--musicInfo > p{
+            margin:0px;
+        }
+        .main__content--musicInfo > p:last-child{
+            font-size: 15px;
+        }
+
         .main__btns{
+            padding:20px 0px;
             display:flex;
+            justify-content: space-between;
             align-items:center;
         }
-        .main__btns--play{
-            width:90px;
+
+        button[class^="main__btns"]{
             height: 40px;
             display:flex;
+            justify-content: space-evenly;
             align-items: center;
-
             background-color: whitesmoke;
-            border: 2px solid black;
-            border-radius: 10px;
+            border: var(--defaultboderLine);
             box-shadow: 0px 5px 0px;
+        }
+        
+        .main__btns--play{
+            width:100px;
+            border-radius: 15px;
+        }
+        .main__btns--like{
+            width:40px;
+            border-radius: 50%;
+        }        
+        .main__btns--addList{
+            width:40px;
+            border-radius: 50%;
+        }
+
+
+        .playList{
+            width:100%;
+            display:flex;
+            flex-direction: column;
+            font-size: 12px;
+            font-weight: 300;
+        }
+        .playList__element{
+            margin:15px 0px;
+            display:flex;
+            align-items: center;
+        }
+        .playList--photo{
+            margin:0px 10px 0px 0px;
+            width:30px;
+            height:30px;
+            border: var(--defaultboderLine);
+            border-radius: 5px;
+        }
+        .playList--content{
+            margin:0px 5px;
+        }
+        .playList--content > div:first-child{
+            font-size: 22px;
+            font-weight: 700;
+        }
+        .playList__element:nth-child(1) > .playList--photo{
+            background-color: #f85a2a;         
+        }
+        .playList__element:nth-child(2) > .playList--photo{
+            background-color: #ff89bb;         
+        }
+        .playList__element:nth-child(3) > .playList--photo{
+            background-color: #1947e5;         
+        }
+        .playList__element:nth-child(4) > .playList--photo{
+            background-color: #00c6ad;         
         }
 
     </style>
 </head>
 <body>
     <header>
-        <button class="header__Xbtn">
+        <div class="header__Xbtn">
             <i class="fas fa-times"></i>
-        </button>
-        <span class="header__title">Playlist</span>
+        </div>
+        <div class="header__title">Playlist</div>
+        <div class="header__empty"></div>
     </header>
     <main>
         <div class="main__content">
             <div class="main__content--photo">
-                <i class="fas fa-image"></i>
-                <!-- <img src="default.jpg" alt="noIMG.jpg"> -->
+                <i class="fas fa-image fa-2x"></i>
             </div>
             <div class="main__content--musicInfo">
                 <p class="main__content--title">Random Love</p>
@@ -109,30 +185,30 @@
         </div>
     </main>
     <div class="playList">
-        <div class="playList--element">
+        <div class="playList__element">
             <div class="playList--photo"></div>
             <div class="playList--content">
                 <div>Matargasti</div>
                 <div>Mohit Chauhan</div>
             </div>
         </div>
-        <div class="playList--element">
+        <div class="playList__element">
             <div class="playList--photo"></div>
-            <div class="playList__content">
+            <div class="playList--content">
                 <div>Attitude</div>
                 <div>Lewis OfMan, Attitude</div>
             </div>
         </div>
-        <div class="playList--element">
+        <div class="playList__element">
             <div class="playList--photo"></div>
-            <div class="playList__content">
+            <div class="playList--content">
                 <div>Try Everything</div>
                 <div>Shakira, Zootopia</div>
             </div>
         </div>
-        <div class="playList--element">
+        <div class="playList__element">
             <div class="playList--photo"></div>
-            <div class="playList__content">
+            <div class="playList--content">
                 <div>Sunflower</div>
                 <div>Joseph Vincent, Sunflower</div>
             </div>
