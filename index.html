@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to KokoaTalk</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>11%</span>
+            <i class="fas fa-battery-three-quarters fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+        <p class="welcome-header__text">If you have a Kakao Account, log in with your email or phone number.</p>
+    </header>
+
+    <form action="#" class="login-form">
+        <input type="text" placeholder="Email or phone number"/>
+        <input type="password" placeholder="Password"/>
+        <input type="submit" value="Log in">
+        <a href="#">Find Kakao Account or Password</a>
+    </form>
+
+
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+</body>
+</html>
+<!-- 
+    https://heroicons.com/ >>아이콘
+    https://fontawesome.com/ >>아이콘,폰트
+    https://fonts.google.com/ >>폰트
+
+ BEM을 사용해서 코딩을 하는 것을 추천한다. (BEM은 가급적 class명으로 해결한다.)
+ 폰트를 가져오는 것은 @import로 CSS파일에 가져오는 것을 추천한다.
+ 중심에 컨텐츠를 놓는 CSS-hack : 
+    (부모태그)justify-content: center; 작성 - 가운데 컨텐츠들을 모으고 
+    >> (자식태그)width:33%;지정 - 컨텐츠들의 너비를 1/n로 한다음(ex.3개 > 33%)
+    >> (자식태그)가운데 위치한 태그의 안쪽을 flex로 가운데 정렬(justify-content: center;)하여 위치를 맞춘다.
+ -->

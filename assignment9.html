@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment9</title>
+    <style>
+        :root{
+            --backgroundColor: whitesmoke;
+        }
+        html{
+            background-color: #00C6AD;
+        }
+        body{
+            background-color: var(--backgroundColor);
+            height: 100vh;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .playList{
+            display:flex;
+            flex-direction: column;
+        }
+        .playList--element{
+            display:flex;
+        }
+        .playList--photo{
+            margin:5px;
+            width:30px;
+            height:30px;
+            border: 2px solid black;
+            border-radius: 3px;
+        }
+        .playList--content{
+            margin:0px 5px;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+        }
+        .main__content{
+            display:flex;
+            align-items: center;
+        }
+        .main__content--photo{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            border-radius: 15px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FFBD11;
+        }
+        .main__btns{
+            display:flex;
+            align-items:center;
+        }
+        .main__btns--play{
+            width:90px;
+            height: 40px;
+            display:flex;
+            align-items: center;
+
+            background-color: whitesmoke;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 0px 5px 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <button class="header__Xbtn">
+            <i class="fas fa-times"></i>
+        </button>
+        <span class="header__title">Playlist</span>
+    </header>
+    <main>
+        <div class="main__content">
+            <div class="main__content--photo">
+                <i class="fas fa-image"></i>
+                <!-- <img src="default.jpg" alt="noIMG.jpg"> -->
+            </div>
+            <div class="main__content--musicInfo">
+                <p class="main__content--title">Random Love</p>
+                <p class="main__content--singer">by Divay Kapoor</p>
+            </div>
+        </div>
+        <div class="main__btns">
+            <button class="main__btns--play">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                  </svg>
+                  <span>Play</span>
+            </button>
+            <button class="main__btns--like">heart</button>
+            <button class="main__btns--addList">plus</button>
+        </div>
+    </main>
+    <div class="playList">
+        <div class="playList--element">
+            <div class="playList--photo"></div>
+            <div class="playList--content">
+                <div>Matargasti</div>
+                <div>Mohit Chauhan</div>
+            </div>
+        </div>
+        <div class="playList--element">
+            <div class="playList--photo"></div>
+            <div class="playList__content">
+                <div>Attitude</div>
+                <div>Lewis OfMan, Attitude</div>
+            </div>
+        </div>
+        <div class="playList--element">
+            <div class="playList--photo"></div>
+            <div class="playList__content">
+                <div>Try Everything</div>
+                <div>Shakira, Zootopia</div>
+            </div>
+        </div>
+        <div class="playList--element">
+            <div class="playList--photo"></div>
+            <div class="playList__content">
+                <div>Sunflower</div>
+                <div>Joseph Vincent, Sunflower</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+</body>
+</html>
