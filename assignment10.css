@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+:root{
+    --defaultYellow:#FFCE33; 
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    padding:10px;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+.semiTitle{
+    padding-top: 30px;
+    width: 100%;
+    text-align: left;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.header{
+    width: 100%;
+    background-color: var(--defaultYellow);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px 80px 20px;
+    font-weight: 600;
+}
+
+.searchForm{
+    position: absolute;
+    top: 130px;
+    width:90%;
+    height: 80px;
+    border-radius: 40px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 15px rgb(230, 230, 230);
+}
+.searchForm__input{
+    background-color: whitesmoke;
+    width:80%;
+    height:80%;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    outline:none;
+}
+.searchForm__input::placeholder{
+    color: rgba(0, 0, 0, 0.2);
+}
+.searchForm__search{
+    position:absolute;
+    border:none;
+    top: 25px;
+    right: 40px;
+    opacity: 30%;
+}
+
+.bookOfTheDay{
+    padding-top: 90px;
+}
+
+.mainContent{
+    padding: 30px 0px 0px 0px;
+    width:100%;
+    display:flex;
+    align-items: center;
+}
+.mainContent__photo{
+    width:200px;
+    height: 300px;
+    border: 1px solid rgb(99, 99, 99);
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+.mainContent__photo--img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.mainContent__content{
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.mainContent__content__title{
+    font-size: 30px;
+    font-weight: 600;
+}
+.mainContent__content__writer{
+    padding-top: 5px;
+    font-size: 20px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.5);
+}
+.mainContent__content__score{
+    padding-top: 5px;
+    color:var(--defaultYellow);
+}
+.mainContent__content__keyword{
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+}
+.mainContent__content__keyword > div{
+    margin-right: 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color:var(--defaultYellow);
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    line-height: 200%;
+    font-size: 16px;
+    font-weight: 600;
+}
+.mainContent__content__etc{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.mainContent__content__etc--bookmark{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 200%;
+    background-color: var(--defaultYellow);
+}
+.mainContent__content__etc--bookBtn{
+    margin-left: 25px;
+    width: 180px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: rgb(27, 27, 46);
+    color: whitesmoke;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+}
+
+.topAdventure{
+    width:100%;
+    height: 200px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: scroll;
+}
+.topAdventure__list{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+.topAdventure__list--photo{
+    width:100px;
+    height: 150px;
+    border: 1px solid rgb(99, 99, 99);
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+.topAdventure__list--photo__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.topAdventure__list--score{
+    padding: 10px;
+    color: var(--defaultYellow);
+    font-size: 10px;
+    text-align: center;
+}
+.author{
+    padding: 25px 0px;
+    width:100%;
+    display:flex;
+    align-items: center;
+}
+.author__photo{
+    width:200px;
+    height: 250px;
+    border-radius: 15px;
+    flex-shrink: 0;
+}
+.author__photo--img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.author__content{
+    padding: 20px;
+}
+.author__content--title{
+    text-align: center;
+    /* line-height: 60px; */
+    font-size: 30px;
+    font-weight: 600;
+}
+.author__content--content{
+    text-align: left;
+    /* line-height: 60px; */
+    font-size: 16px;
+    font-weight: 300;
+}
