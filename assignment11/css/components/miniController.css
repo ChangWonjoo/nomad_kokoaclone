@@ -1,0 +1,56 @@
+.miniController{
+    background-color: var(--black);
+    border-radius: 35px;
+    padding: 0px 25px;
+    width: 100%;
+    height: 70px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: ceneter;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.miniController__musicInfo{
+    /* border:1px solid white; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+.miniController__title{
+    /* border: 1px solid white; */
+    color: var(--white);
+    padding: 3px;
+    font-size: 18px;
+} 
+.miniController__singer{
+    /* border: 1px solid white; */
+    padding: 3px;
+    font-size: 13px;
+} 
+
+.miniController__Btns{
+    /* border:1px solid white; */
+    margin-left: 30px;
+    width: 120px;
+    /* height: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.miniController__Btns > button {
+    color: var(--white);
+    font-size: 14px;
+}
+
+.miniController__Btns > button:nth-child(2) {
+    font-size: 22px; 
+    /* >> 적용됨 */
+}
+
+/* .miniController__playPause{
+    font-size: 30px; 
+    >> 적용 안됨 
+} 
+*/

@@ -1,0 +1,34 @@
+/* OpenSans : 300,400-regular,600,700 */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+/* common_CSS */
+@import "reset.css";
+@import "variables.css";
+
+/* components */
+@import "components/headerBar.css";
+@import "components/musicInfo.css";
+@import "components/miniController.css";
+
+/* screens */
+@import "screens/page1.css";
+@import "screens/page2.css";
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    height:100vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F7F7F7;
+}
+.page{
+    width: 370px;
+    height: 790px;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: var(--shadowDefault);
+}

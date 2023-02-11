@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment11</title>
+    <link rel="stylesheet" href="css/assignment11.css">
+</head>
+<body>
+    <!-- page1 -->
+    <div class="page">
+        <header class="headerBar">
+            <button class="headerBar__btns backBtn">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <button class="headerBar__btns searchBtn">
+                <i class="fas fa-search"></i>
+            </button>
+        </header>
+        <main class="page1__main">
+            <div class="page1__main__photo">
+                <img src="img/tylerBeanie.jpg" alt="noIMG.jpg">
+            </div>
+            <div class="page1__main__info musicInfo">
+                <span class="page1__main__title musicTitleFont">Tyler,The Creator</span>
+                <span class="page1__main__type musicContentFont">Rap, Hip-Hop</span>
+            </div>
+            <div class="page1__main__btns">
+                <button class="page1__main__shuffleBtn">Shuffle</button>
+                <button class="page1__main__likeBtn">
+                    <i class="fas fa-heart"></i>
+                    212,971
+                </button>
+            </div>
+        </main>
+        <div class="musics">
+            <ul class="musics__list">
+                <li class="musics__element">
+                    <div class="musics__element__photo">
+                        <img src="img/albumcover.jpg" alt="noIMG.jpg">
+                    </div>
+                    <div class="musics__element__info">
+                        <span class="musics__element__singer musicContentFont">Tyler,the Creater</span>
+                        <span class="musics__element__title musicTitleFont">EARFQUAKE</span>
+                    </div>
+                    <button class="music__element__ellipsisBtn V-ellipsisBtn">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </li>
+                <li class="musics__element">
+                    <div class="musics__element__photo">
+                        <img src="img/albumcover.jpg" alt="noIMG.jpg">
+                    </div>
+                    <div class="musics__element__info">
+                        <span class="musics__element__singer musicContentFont">Tyler,the Creater</span>
+                        <span class="musics__element__title musicTitleFont">NOVEMBER</span>
+                    </div>
+                    <button class="music__element__ellipsisBtn V-ellipsisBtn">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </li>
+                <li class="musics__element">
+                    <div class="musics__element__photo">
+                        <img src="img/albumcover.jpg" alt="noIMG.jpg">
+                        <div class="playingMark">
+                            <i class="fas fa-headphones"></i>
+                        </div>
+                    </div>
+                    <div class="musics__element__info">
+                        <span class="musics__element__singer musicContentFont">Tyler,the Creater</span>
+                        <span class="musics__element__title musicTitleFont">911</span>
+                    </div>
+                    <button class="music__element__ellipsisBtn V-ellipsisBtn">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </li>
+                <li class="musics__element">
+                    <div class="musics__element__photo">
+                        <img src="img/albumcover.jpg" alt="noIMG.jpg">
+                    </div>
+                    <div class="musics__element__info">
+                        <span class="musics__element__singer musicContentFont">Tyler,the Creater</span>
+                        <span class="musics__element__title musicTitleFont">WOLF</span>
+                    </div>
+                    <button class="music__element__ellipsisBtn V-ellipsisBtn">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="miniController">
+            <div class="miniController__musicInfo">
+                <span class="miniController__singer musicContentFont">Tyler,the Creater</span>
+                <span class="miniController__title musicTitleFont">911</span>
+            </div>
+            <div class="miniController__Btns">
+                <button class="miniController__rewind">
+                    <i class="fas fa-step-backward"></i>
+                </button>
+                <button class="miniController__playPause">
+                    <i class="fas fa-pause"></i>
+                </button>
+                <button class="miniController__fastFoward">
+                    <i class="fas fa-step-forward"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- page2 -->
+    <div class="page">
+        <header class="headerBar">
+            <button class="headerBar__btns backBtn">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <button class="headerBar__btns V-ellipsisBtn">
+                <i class="fas fa-ellipsis-v"></i>
+            </button>
+        </header>
+        <main class="page2__main">
+            <div class="page2__main__photo">
+                <img src="img/albumcover.jpg" alt="noIMG.jpg">
+            </div>
+            <div class="page2__main__info musicInfo">
+                <span class="page2__main__title musicTitleFont">November</span>
+                <span class="page2__main__singer musicContentFont">Tyler,The Creator</span>
+            </div>
+        </main>
+        <div class="controller">
+            <div class="controller__playRange">
+                <div class="controller__musicTime">
+                    <span class="controller__startTime">1:56</span>
+                    <span class="controller__endTime">2:21</span>
+                </div>
+                <div class="controller__rangeBar">
+                    <input type="range" 
+                        name="controller__rageBar--input" id="controller__rageBar--input"
+                        min="0" max="100" value="78"
+                    />
+                </div>
+            </div>
+            <div class="controller__Btns">
+                <button class="controller__Btns__loop">
+                    <i class="fas fa-sync-alt"></i>
+                </button>
+                <button class="controller__Btns__rewind">
+                    <i class="fas fa-step-backward"></i>
+                </button>
+                <button class="controller__Btns__playPause">
+                    <i class="fas fa-play fa-2x playBtn"></i>
+                </button>
+                <button class="controller__Btns__next">
+                    <i class="fas fa-step-forward"></i>
+                </button>
+                <button class="controller__Btns__suffle">
+                    <i class="fas fa-random"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+</body>
+</html>

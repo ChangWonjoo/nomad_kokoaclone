@@ -1,0 +1,7 @@
+:root{
+    --black: #222222;
+    --grey: #a2a2a2;
+    --white: white;
+    --shadowDefault: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    --fontSize_nomarl: 20px;
+}
