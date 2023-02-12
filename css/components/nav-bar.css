@@ -32,3 +32,15 @@
     bottom:22px;
     left:22px;   
 }
+.nav__btn{
+    position: relative;
+}
+.nav__btn__new-mark{
+    position:absolute;
+    bottom:30px;
+    left:35px;
+    width: 5px;
+    height: 5px;
+    background-color: tomato;
+    border-radius: 50%;
+}

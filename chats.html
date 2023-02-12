@@ -25,48 +25,27 @@
     </div>
 
     <header class="screen-header">
-        <h1 class="screen-header__title">Friends</h1>
+        <h1 class="screen-header__title">Chats</h1>
         <div class="screen-header__icons">
             <span><i class="fas fa-search fa-lg"></i></span>
+            <span><i class="fas fa-comment-medical fa-lg"></i></span>
             <span><i class="fas fa-music fa-lg"></i></span>
             <span><i class="fas fa-cog fa-lg"></i></span>
-            
         </div>
     </header>
-
-    <a href="#" id="friends-display-link">
-        <i class="fas fa-info-circle"></i>
-        Friends' Names Display
-        <i class="fas fa-chevron-right fa-xs"></i>
-    </a>
     
-    <div class="friends-screen">
+    <div class="chats-screen">
         <div class="user-component">
             <div class="user-component__column">
-                <img src="img/avatar.jpg" class="user-component__avatar user-component__avatar--xl" alt="">
+                <img src="img/avatar.jpg" class="user-component__avatar" alt="">
                 <div class="user-component__text">
                     <h4 class="user-component__title">Tsu'tey</h4>
-                    <!-- <h6 class="user-component__subtitle">SOBOROPPANG's Subtitle</h6> -->
+                    <h6 class="user-component__subtitle">I see you</h6>
                 </div>
             </div>
-        </div>
-        <div class="friends-screen__channel">
-            <div class="friends-screen__channel-header">
-                <span>Channel</span>
-                <i class="fas fa-chevron-up fa-xs"></i>
-            </div>
-        </div>
-        <div class="user-component">
-            <div class="user-component__column">
-                <img src="img/avatar.jpg" class="user-component__avatar user-component__avatar--sm" alt="">
-                <div class="user-component__text">
-                    <h4 class="user-component__title user-component__title--unbold">Omaticayas</h4>
-                    <!-- <h6 class="user-component__subtitle">SOBOROPPANG's Subtitle</h6> -->
-                </div>
-            </div>
-            <div class="user-component__column">
+            <div class="user-component__column user-component__column--chats">
+                <span>21:47</span>
                 <span>2</span>
-                <i class="fas fa-chevron-right fa-xs"></i>
             </div>
         </div>
     </div>
@@ -96,14 +75,3 @@
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
 </body>
 </html>
-<!-- 
-    *nav태그 처럼 연속된 태그를 작성할 때 꿀팁
-    1. nav>ul>li*4>a
-    2. Tap으로 움직이면서 내용 작성
-
-    *position fixed/absolute 차이
-    absolute 는 static 이 아닌 다른 속성을 갖고 있는 부모를 기준으로 포지션을 설정합니다. 
-    fixed 는 화면상의 특정한 위치에 요소의 포지션을 고정시킵니다.
-    >> fixed 설정 후, padding으로 인해 내용물이 잘릴 때는 "box-sizing: border-box;"
--->
- 
