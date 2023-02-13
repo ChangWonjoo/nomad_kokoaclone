@@ -1,3 +1,5 @@
-.chats-screen{
-    padding: 0px var(--horizontal-space);
+.chats-screen .user-component{
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
 }
